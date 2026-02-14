@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayan - Personal Life</title>
+    <link rel="stylesheet" href="styles.css">  
+</head>
+<body class="night">
+    <!-- Stars and Moon Background -->
+    <div class="night-sky">
+        <div class="moon"></div>
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star" style="animation-delay: 3s; top: 20%; left: 70%;"></div>
+        <div class="shooting-star" style="animation-delay: 6s; top: 40%; left: 30%;"></div>
+        <div class="night-cloud night-cloud1"></div>
+        <div class="night-cloud night-cloud2"></div>
+        <div class="night-cloud night-cloud3"></div>
+        <div class="night-cloud night-cloud4"></div>
+        <div class="night-cloud night-cloud5"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="nav-name">Dayan Yee Ming</span>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="nav-link">Academic</a>
+            <a href="personal.html" class="nav-link active">Personal Life</a>
+        </div>
+    </nav>
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+        <div class="profile-image">
+            <img src="picture.jpeg" alt="Dayan" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+        </div>
+        <h1>Dayan</h1>
+        <p class="tagline">👽 Just a regular human being 👻</p>
+    </div>
+
+        <!-- Baking -->
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">
+                <h2>🎂 Baking</h2>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="card-content">
+                <div class="content-with-image">
+                    <div class="text-content">
+                        <p>
+                            Baking are always one of my top interest. I always find it fascinating and fun to learn new recipes. Creating delicous rewards for my sweet tooth and forgetting about any other stress in life🍰
+                        </p>
+                    </div>
+                    <div class="image-content">
+                        <img src="cakenocut.jpeg" alt="Baking" class="hobby-image square">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drawing -->
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">
+                <h2>✏️ Drawing</h2>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="card-content">
+                <p>
+                    Always loved drawing since a kid. I'm a self-taught amateur but would love to get into digital art one day. Drawing random things put my mind at east but my OCD is the greatst ENEMY!💢
+                </p>
+            </div>
+        </div>
+
+        <!-- Sports -->
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">
+                <h2>🏃 Sports</h2>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="card-content">
+                <div class="content-with-image">
+                    <div class="text-content">
+                        <p>
+                           Sports are my lifestyle, playing basketball🏀, volleyball🏐 and etc kept my childhood filled and intense with uncertainties everyday in highschool. I love the competitiveness and teamwork with others. 
+                        </p>
+                    </div>
+                    <div class="image-content image-content-double">
+                        <img src="basketball.png" alt="Sports 1" class="hobby-image rectangle">
+                        <img src="volleyball.jpeg" alt="Sports 2" class="hobby-image rectangle">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

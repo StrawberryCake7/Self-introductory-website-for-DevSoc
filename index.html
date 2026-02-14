@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayan - Introduction</title>
+    <link rel="stylesheet" href="styles.css">  
+</head>
+<body class="day">
+     <!-- Morning Sky Background -->
+    <div class="morning-sky">
+        <div class="sun">
+            <div class="sun-ray"></div>
+            <div class="sun-ray"></div>
+            <div class="sun-ray"></div>
+            <div class="sun-ray"></div>
+            <div class="sun-ray"></div>
+            <div class="sun-ray"></div>
+            <div class="sun-ray"></div>
+            <div class="sun-ray"></div>
+        </div>
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+        <div class="cloud cloud4"></div>
+        <div class="cloud cloud5"></div>
+        <div class="cloud cloud6"></div>
+        <div class="cloud cloud7"></div>
+        <div class="cloud cloud8"></div>
+        <div class="cloud cloud9"></div>
+        <div class="cloud cloud10"></div>
+        <div class="bird bird1"></div>
+        <div class="bird bird2"></div>
+        <div class="bird bird3"></div>
+    </div>
+
+    <!-- Stars and Moon Background -->
+    <div class="night-sky">
+        <div class="moon"></div>
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="nav-name">Dayan Yee Ming</span>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="nav-link active">Academic</a>
+            <a href="personal.html" class="nav-link">Personal Life</a>
+        </div>
+    </nav>
+
+    <!-- Theme Toggle Button - MOVED HERE -->
+    <button class="theme-toggle" id="themeToggle">
+        <span id="themeIcon">🌙</span>
+    </button>
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+        <div class="profile-image">
+            <img src="picture.jpeg" alt="Dayan" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+        </div>
+        <h1>Dayan</h1>
+        <p class="tagline">🤯 2nd Year Computer science student 😶‍🌫️</p> 
+    </div>
+
+    <!-- WRAP ALL CARDS IN CONTAINER - NEW -->
+    <div class="container">
+        <!-- About Me -->
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">
+                <h2>👋 About Me</h2>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="card-content">
+                <p>
+                    Hi! I'm Dayan and this is my first time creating a website. I found myself confused at some times
+                    but the process of learning new things are always so fun and exciting. Looking forward to meeting 
+                    new people and learning with them!
+                </p>
+            </div>
+        </div>
+
+        <!-- This Website -->
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">
+                <h2>🌓 About this website</h2>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="card-content">
+                <p>
+                    This website is my first attempt in web devalopment and it showcases the "Day and Night" theme just like the cycle of day and night while introducing myself. 
+                </p>
+                <p>
+                    Click the top right icon to swicth between tabs!↗️↗️
+                </p>
+            </div>
+        </div>
+
+        <!-- Progression in CS major -->
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">
+                <h2>🚀 My Progression into CS degree </h2>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="card-content">
+                <p>
+                    COMP1511, COMP1521, COMP1531, COMP2521
+                </p>
+            </div>
+        </div>
+
+        <!-- Reasoning to join -->
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">
+                <h2>💡 Why Devsoc? </h2>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>I want to learn alongside experienced people and make friends of the same interest</li>
+                    <li>Build a project that i can happily showcase</li>
+                    <li>Put myself out of comfort zone and grow with other passionate learners</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Get in touch -->
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">
+                <h2>📬 Get in Touch</h2>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="card-content">
+                <p>Feel free to connect with me:</p>
+                <div class="contact-buttons">
+                    <a href="https://github.com/StrawberryCake7" class="contact-btn" target="_blank">GitHub</a>
+                    <a href="https://au.linkedin.com/in/dayan-pua-992116364" class="contact-btn" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTAINER -->
+
+    <script src="script.js"></script>
+</body>
+</html>
